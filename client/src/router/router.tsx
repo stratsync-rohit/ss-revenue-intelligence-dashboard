@@ -6,7 +6,9 @@ import InventoryPage from "../pages/InventoryPage"
 import BrandPage from "../pages/BrandPage"
 import SupplierPage from "../pages/SupplierPage"
 import CustomerPage from "../pages/CustomerPage"
+import OfferPage from "../pages/OfferPage"
 import NotFoundPage from "../pages/NotFoundPage"
+ 
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +44,13 @@ export const router = createBrowserRouter([
     element: <AppLayout />, 
     children: [
       { index: true, element: <BrandPage /> },
+    ]
+  },
+   {
+    path: "/offers",
+    element: <AppLayout />, 
+    children: [
+      { index: true, element: <OfferPage /> },
     ]
   },
   {
