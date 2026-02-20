@@ -277,7 +277,7 @@ const columnsConfig = [
 
 const columnHelper = createColumnHelper<typeof sampleData[0]>()
 const columns = columnsConfig.map(col =>
-  col.cell
+  'cell' in col && col.cell
     ? columnHelper.accessor(col.accessor as any, { header: col.header, cell: col.cell })
     : columnHelper.accessor(col.accessor as any, { header: col.header })
 )
