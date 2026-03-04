@@ -13,7 +13,7 @@ const AppLayout = () => {
       minute: "2-digit",
       second: "2-digit",
     });
-// test
+
   const getTodayDate = () =>
     new Date().toLocaleDateString("en-GB", {
       day: "2-digit",
